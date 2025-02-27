@@ -9,7 +9,7 @@ try:
         database=Config.MYSQL_DB,
         port=Config.MYSQL_PORT
     )
-    print("✅ Successfully connected to Railway MySQL!")
+    print("Successfully connected to Railway MySQL!")
     conn.close()
 except Exception as e:
-    print(f"❌ Connection failed: {e}")
+    print(f" Connection failed: {e}")

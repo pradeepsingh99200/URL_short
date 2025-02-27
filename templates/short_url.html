@@ -8,14 +8,14 @@
 </head>
 <body>
 <div class="container">
-    <h2>Your Shortened URL 🔥</h2>
+    <h2>Your Shortened URL </h2>
     <p class="short-url">
         <a href="{{ request.url_root }}{{ short_code }}" target="_blank" id="shortLink">
             {{ request.url_root }}{{ short_code }}
         </a>
     </p>
     
-    <button onclick="copyURL()">📋 Copy URL</button>
+    <button onclick="copyURL()">Copy URL</button>
     <a href="/" class="back-link">Shorten Another</a>
 </div>
 
@@ -23,7 +23,7 @@
     function copyURL() {
         let url = document.getElementById("shortLink").innerText;
         navigator.clipboard.writeText(url);
-        alert("URL Copied to Clipboard ✅");
+        alert("URL Copied to Clipboard ");
     }
 </script>
 </body>
